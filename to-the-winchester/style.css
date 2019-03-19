@@ -1,0 +1,136 @@
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    #map {
+      width: 90%;
+    }
+    #container {
+      height: 96%;
+      width: 96%;
+      padding: 10px 10px 20px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      background-image: URL('https://www.maria-kang.com/photos/shaun-of-the-dead-characters.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+    #floating-panel {
+      position: relative;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px 10px 10px;
+      text-align: center;
+      font-family: 'verdana';
+      line-height: 30px;
+      width: 100%;
+    }
+    #right-panel {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 6;
+      height: 100%;
+      float: right;
+      width: 30vw;
+      overflow: auto;
+      background: white;
+      opacity: 0.95;
+      visibility: hidden;
+      min-width: 180px;
+    }
+    .message {
+      text-align: center;
+      line-height: 32px;
+      color: white;
+      font-weight: bold;
+      text-shadow: -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+      font-size: 25px;
+      margin-bottom: 10px;
+      width: 90%;
+    }
+    #button-container {
+      position: relative;
+      background-color: #fff;
+      padding: 5px;
+      text-align: center;
+      height: 35px;
+      width: 65%;
+      min-width: 275px;
+      max-width: 400px;
+      margin: 10px;
+      background: none;
+      z-index: 7;
+    }
+    .button{
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      font-family: 'verdana';
+      font-size: 18px;
+      background: #bfbfbf;
+      color: black;
+      opacity: 0.8;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+    .button:hover, select:hover {
+      background: black;
+      color: white;
+      opacity: 0.8;
+    }
+    .button:disabled {
+      opacity: 0.8;
+      background: #d9d9d9;
+      color: #a6a6a6;
+    }
+    .show-hide {
+      position: absolute;
+      top: 0;
+      left: 20%;
+      width: 27%;
+      font-size: 15px;
+      z-index: 8;
+    }
+    .exit {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18%;
+      font-size: 15px;
+      z-index: 8;
+    }
+    #get-directions, #show-hide-details, #mode, #exit-directions, #geo-message {
+      visibility: hidden;
+    }
+    #geo-message {
+      line-height: 0px;
+      color: white;
+    }
+    select {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      font-family: 'verdana';
+      background: #bfbfbf;
+      color: black;
+      opacity: 0.9;
+      font-size: 15px;
+      border-radius: 5px;
+    }
